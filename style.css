@@ -104,5 +104,7 @@ hr.divider {
 .main-content button{
     padding: 15px 25px;
     border-radius: 5px;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
