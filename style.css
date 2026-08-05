@@ -114,10 +114,11 @@ hr.divider {
 .after-hours{
     display: flex;
     align-items: center;
-    gap: 20px;
     justify-content: space-between;
+    width: 100%;
 }
-.after-hours button{
-        display: flex;
-    align-items: right;
+
+.after-hours button {
+    margin-left: auto;
+    margin-right: 0;!impo
 }
