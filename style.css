@@ -22,7 +22,7 @@ text-align: center;
 .service-header {
     display: flex;
     align-items: baseline;
-    gap: 40%;
+    gap: 20px;
 }
 
 button {
