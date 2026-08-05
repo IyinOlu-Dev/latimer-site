@@ -1,14 +1,12 @@
 body{
     background-color:#D8DAE0;
     color:  #0B0B0C;  
-    /* font-family: Sans-Serif, "Geometric Sans-Serif" ; */
-
+    font-family: Serif, "Geometric Sans-Serif" ;
 }
 
 .hero{
     padding: 20px;
 }
-
 
 .header-content {
 text-align: center;
@@ -32,7 +30,6 @@ button {
     cursor: pointer;
 }
 
-
 .hero button{
     padding: 20px 30px;
     border-radius: 10px;
@@ -44,7 +41,6 @@ button:hover{
     transform: translate(-6px, 6px);
     box-shadow: 0 10px 20px rgba(11, 11, 12, 0.15);
 }
-
 
 hr.divider {
     border: none;
@@ -107,4 +103,21 @@ hr.divider {
     display: flex;
     align-items: center;
     margin: 0 auto;
+}
+.service-divider{
+    margin: 40px 0px;
+    background-color: #0B0B0C;
+    border: none;
+    height: 3px
+}
+
+.after-hours{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.after-hours button{
+        display: flex;
+    align-items: right;
 }
