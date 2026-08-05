@@ -14,22 +14,22 @@ text-align: center;
 }
 
 .logo img {
-    width: 30px;
+    width: 200px;
     padding:20px;
 }
 
 button {
     background-color: #0B0B0C;
     color: #F5F6F8;
-        transition: background-color 0.4s ease, color 0.4 ease , box-shadow 0.4 ease;
-
+    transition: background-color 0.4s ease, color 0.4 ease , box-shadow 0.4 ease;
+    cursor: pointer;
 }
 
 
 .hero button{
     padding: 20px 30px;
     border-radius: 10px;
-    cursor: pointer;
+
 }
 button:hover{
     background-color: #F5F6F8;
