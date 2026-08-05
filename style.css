@@ -41,7 +41,7 @@ button {
 button:hover{
     background-color: #F5F6F8;
     color: #0B0B0C;
-    transform: translate(-6px 6px);
+    transform: translate(-6px, 6px);
     box-shadow: 0 10px 20px rgba(11, 11, 12, 0.15);
 }
 
