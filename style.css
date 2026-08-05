@@ -1,0 +1,103 @@
+body{
+    background-color:#F5F6F8;
+    color:  #0B0B0C;  
+    /* font-family: Sans-Serif, "Geometric Sans-Serif" ; */
+
+}
+
+.hero{
+    padding: 20px;
+}
+
+.header-content {
+text-align: center;
+}
+
+.logo img {
+    width: 30px;
+    padding:20px;
+}
+
+button {
+    background-color: #0B0B0C;
+    color: #F5F6F8;
+        transition: background-color 0.4s ease, color 0.4 ease , box-shadow 0.4 ease;
+
+}
+
+
+.hero button{
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #F5F6F8;
+    color: #0B0B0C;
+    transform: translate(-6px 6px);
+    box-shadow: 0 10px 20px rgba(11, 11, 12, 0.15);
+}
+
+
+hr.divider {
+    border: none;
+    height: 3px;
+    background-color: #0B0B0C;
+    margin: 40px 0px;
+}
+
+.main-content{
+    padding-left: 20px
+}
+
+.main-content img{
+    width:40% ;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden; /* Hides images as they slide off-screen */
+    padding: 10px 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content; /* Allows track to expand as wide as all images combined */
+    
+    /* 15s controls speed (higher = slower continuous movement) */
+    /* linear ensures constant speed without pausing or jerking */
+    animation: marquee 15s linear infinite; 
+}
+
+/* Pause motion when hovering so users can look closely */
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.carousel-track img {
+    width: 320px;            /* Fixed width for consistent scrolling speed */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;       /* Spacing between images */
+    flex-shrink: 0;
+}
+
+/* Infinite continuous scroll keyframe */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Moves exactly half the track length before resetting */
+    }
+}
+
+
+.main-content button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-content div{
+}
