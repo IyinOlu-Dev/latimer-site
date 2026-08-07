@@ -4,12 +4,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color:#D8DAE0;
-    color:  #0B0B0C;  
+body {
+    background-color: #D8DAE0;
+    color: #0B0B0C;  
     font-family: Serif, "Geometric Sans-Serif", sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* --- BUTTON STYLES (REFINED & PROFESSIONAL) --- */
@@ -55,7 +56,7 @@ button:hover {
 /* --- STICKY NAVIGATION --- */
 
 .hero {
-    padding: 90px 20px 20px; /* Top padding pushed down to account for nav */
+    padding: 110px 20px 20px; /* Top padding pushed down to account for nav */
 }
 
 .sticky-nav {
@@ -157,6 +158,8 @@ button:hover {
 
 .header-content {
     text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .logo img {
@@ -172,6 +175,8 @@ hr.divider, .service-divider {
 }
 
 .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -184,6 +189,7 @@ hr.divider, .service-divider {
     display: flex;
     align-items: baseline;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .after-hours {
@@ -230,6 +236,8 @@ hr.divider, .service-divider {
 .testimonials {
     padding: 20px;
     overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .testimonial-carousel {
@@ -388,4 +396,108 @@ footer {
     border-top: 1px solid rgba(245, 246, 248, 0.2);
     font-size: 0.9rem;
     opacity: 0.7;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES (MOBILE & TABLET)
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* Navigation adjustments */
+    .sticky-nav {
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+
+    .sticky-nav .nav-links {
+        gap: 15px;
+    }
+
+    .sticky-nav .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .sticky-nav.scrolled .nav-brand {
+        left: 20px;
+    }
+
+    .sticky-nav.scrolled .nav-book-action {
+        right: 20px;
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Hero section */
+    .hero {
+        padding-top: 80px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+
+    .quote {
+        font-size: 1rem !important;
+    }
+
+    /* Service headers stacking */
+    .service-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .after-hours {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .after-hours button {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    /* Carousel image sizing for mobile screens */
+    .carousel-track img {
+        width: 240px;
+        height: 280px;
+        margin-right: 15px;
+    }
+
+    /* Testimonials & Review cards */
+    .review-card {
+        width: 300px;
+        padding: 18px;
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .business-hours ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-nav .nav-links {
+        display: none; /* Hide standard nav links on extra small screens if space is critical, or keep them compact */
+    }
+
+    .sticky-nav {
+        justify-content: flex-end;
+    }
+
+    .sticky-nav .nav-book-action {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+    }
 }
