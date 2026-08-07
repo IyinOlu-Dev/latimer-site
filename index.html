@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latimer Looks</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./images/logo.png">
 </head>
 <body>
-    <header class="hero">
-        <div class="first-header-line">
-
+    
+    <!-- STICKY NAVIGATION -->
+    <nav id="sticky-nav" class="sticky-nav">
+        <a href="#top" class="nav-brand">
+            <img src="./images/logo.png" alt="Latimer Logo">
+        </a>
+        <div class="nav-links">
+            <a href="#top">Booking</a>
+            <a href="#services">Services</a>
+            <a href="#hours">Hours</a>
         </div>
+        <button class="nav-book-action">Book Appointment</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="top">
+        <div class="first-header-line"></div>
         
         <div class="header-content">
             <div class="logo">
@@ -30,18 +42,17 @@
                 </h3>
             </div>
 
-        <button>
-            Book an appointment
-        </button>
+            <button id="main-book-btn">
+                Book an appointment
+            </button>
 
-        <hr class="divider">
+            <hr class="divider">
         </div>
-
     </header>
     
+    <!-- MAIN CONTENT / SERVICES -->
     <section class="main-content">
-
-        <div class="popular">
+        <div class="popular" id="services">
             <h2>Popular Services</h2>
             <hr>
             <div class="service-header">
@@ -49,23 +60,19 @@
                 <button>$50</button>
                 <h4>HAIRCUT, BEARD & SHAMPOO</h4>
             </div>
-                <p>Haircut + full beard sculpting, razor detailing, and conditioning finish. Ideal for clients 
-                    who demand balance between hair and facial definition.</p>
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/H&B1.png" alt="picture of a haircut 1">
-                        <img src="./images/H&B2.png" alt="picture of a haircut 2">
-                        <img src="./images/H&B3.png" alt="picture of a haircut 3">
-
-                                        <!-- DUPLICATE IMAGES  -->
-
-                        <img src="./images/H&B1.png" alt="picture of a haircut 1">
-                        <img src="./images/H&B2.png" alt="picture of a haircut 2">
-                        <img src="./images/H&B3.png" alt="picture of a haircut 3">
-                    </div>
-
-
+            <p>Haircut + full beard sculpting, razor detailing, and conditioning finish. Ideal for clients 
+                who demand balance between hair and facial definition.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/H&B1.png" alt="picture of a haircut 1">
+                    <img src="./images/H&B2.png" alt="picture of a haircut 2">
+                    <img src="./images/H&B3.png" alt="picture of a haircut 3">
+                    <img src="./images/H&B1.png" alt="picture of a haircut 1">
+                    <img src="./images/H&B2.png" alt="picture of a haircut 2">
+                    <img src="./images/H&B3.png" alt="picture of a haircut 3">
                 </div>
+            </div>
+
             <hr>
             <div class="service-header">
                 <h3>Taper & Linings</h3>
@@ -74,51 +81,35 @@
             </div>
             <p>A focused clean-up between appointments. Includes tapering the neckline, refreshing the hairline, 
                 light beard or side detailing, and hot towel to keep your look crisp without the full service.</p>
-
-                
-
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/T&P1.png" alt="picture of a haircut 1">
-                        <img src="./images/T&P2.png" alt="picture of a haircut 2">
-                        <img src="./images/T&P3.png" alt="picture of a haircut 3">
-
-                                        <!-- DUPLICATE IMAGES  -->
-                    
-                        <img src="./images/T&P1.png" alt="picture of a haircut 1">
-                        <img src="./images/T&P2.png" alt="picture of a haircut 2">
-                        <img src="./images/T&P3.png" alt="picture of a haircut 3">
-
-                    </div>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/T&P1.png" alt="picture of a haircut 1">
+                    <img src="./images/T&P2.png" alt="picture of a haircut 2">
+                    <img src="./images/T&P3.png" alt="picture of a haircut 3">
+                    <img src="./images/T&P1.png" alt="picture of a haircut 1">
+                    <img src="./images/T&P2.png" alt="picture of a haircut 2">
+                    <img src="./images/T&P3.png" alt="picture of a haircut 3">
                 </div>
+            </div>
         
-                
-        <hr>
+            <hr>
             <div class="service-header">
                 <h3>The Signature Look</h3>
                 <button>$75</button>
                 <h4> Dread, Braids & Many More </h4>
             </div>
             <p>Tailored haircut with styling and grooming product consultation.</p>
-
-                
-
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    
-                                        <!-- DUPLICATE IMAGES  -->
-
-
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    </div>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
                 </div>
+            </div>
         </div>
-
 
         <div class="other-services">
             <hr class="divider">
@@ -127,23 +118,18 @@
             <div class="service-header">
                 <h3>Senior's Cut</h3>
                 <button>$30</button>
-                <!-- <h4> Dread, Braids & Many More </h4> -->
             </div>
-            <!-- <p>Tailored haircut with styling and grooming product consultation.</p> -->
-
             <div class="carousel">
                 <div class="carousel-track">
                     <img src="./images/PC1.png" alt="picture of a haircut 1">
                     <img src="./images/PC2.png" alt="picture of a haircut 2">
                     <img src="./images/PC3.png" alt="picture of a haircut 3">
-                
-                                    <!-- DUPLICATE IMAGES  -->
-
                     <img src="./images/PC1.png" alt="picture of a haircut 1">
                     <img src="./images/PC2.png" alt="picture of a haircut 2">
                     <img src="./images/PC3.png" alt="picture of a haircut 3">
                 </div>
             </div>
+
             <hr>
             <div class="service-header">
                 <h3>The Young Modern 8-17</h3>
@@ -151,67 +137,54 @@
                 <h4> Young Man's Haircut & Shampoo </h4>
             </div>
             <p>A refined, age-appropriate cut for young men ages 8–17</p>
-
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    
-                                        <!-- DUPLICATE IMAGES  -->
-
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    </div>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
                 </div>
+            </div>
                 
-                <hr>
-                <div class="service-header">
-                    <h3>The Mini Defined</h3>
-                    <button>$45</button>
-                    <h4> Kids Haircut, Shampoo & Enhancement </h4>
+            <hr>
+            <div class="service-header">
+                <h3>The Mini Defined</h3>
+                <button>$45</button>
+                <h4> Kids Haircut, Shampoo & Enhancement </h4>
+            </div>
+            <p>Includes a tailored haircut plus taper and edge detailing to keep young clients 
+                looking sharp for special occasions or school photos.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
                 </div>
-                <p>Includes a tailored haircut plus taper and edge detailing to keep young clients 
-                    looking sharp for special occasions or school photos.</p>
-
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    
-                                        <!-- DUPLICATE IMAGES  -->
-
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    </div>
-                </div>
+            </div>
                 
-                <hr>
-                <div class="service-header">
-                    <h3>Beard Grooming</h3>
-                    <button>$30</button>
-                    <h4> Beard Grooming Hot Towel </h4>
+            <hr>
+            <div class="service-header">
+                <h3>Beard Grooming</h3>
+                <button>$30</button>
+                <h4> Beard Grooming Hot Towel </h4>
+            </div>
+            <p>Edging, trimming, or fading of beard/goatee. 
+                Includes beard work with organic beard oil & hot towel</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
+                    <img src="./images/PC1.png" alt="picture of a haircut 1">
+                    <img src="./images/PC2.png" alt="picture of a haircut 2">
+                    <img src="./images/PC3.png" alt="picture of a haircut 3">
                 </div>
-                <p>Edging, trimming, or fading of beard/goatee. 
-                    Includes beard work with organic beard oil & hot towel</p>
-
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    
-                                        <!-- DUPLICATE IMAGES  -->
-
-                        <img src="./images/PC1.png" alt="picture of a haircut 1">
-                        <img src="./images/PC2.png" alt="picture of a haircut 2">
-                        <img src="./images/PC3.png" alt="picture of a haircut 3">
-                    </div>
-                </div>
-
+            </div>
         </div>
 
         <div class="special-servies">
@@ -220,60 +193,228 @@
                 <h2>Special Services</h2>
             </div>
             <hr>
-
             <div class="after-hours">
                 <h3>Off-day/after-hours haircuts</h3>
                 <button>$75</button>
             </div>
-            <div >
+            <div>
                 <div class="after-hours-text">
                     <p>This service can be booked for anyday of the week through phone call or text. </p>
-                    <!-- <span>Monday - Sunday</span> -->
                 </div>
-
             </div>
 
             <hr>
-            
-                <div class="service-header">
-                    <h3>Latimer Looks Classic Tee</h3>
-                    <button>$30</button>
-                    <h4> T-Shirt </h4>
+            <div class="service-header">
+                <h3>Latimer Looks Classic Tee</h3>
+                <button>$30</button>
+                <h4> T-Shirt </h4>
+            </div>
+            <p>The Latimer Looks Signature Tee is cut from premium cotton for a smooth, structured fit that moves with intention. 
+                Featuring the Latimer Looks mark on the chest and a subtle nod to craftsmanship along the hem, 
+                it’s made for those who believe personal style is the first step in self-mastery.</p>
+            <p>Whether paired with denim or layered beneath a tailored jacket, this tee speaks without saying a word. Clean lines. Confident energy. 
+            Designed for the modern gentleman who knows the power of presentation.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="./images/TS1.png" alt="picture of a haircut 1">
+                    <img src="./images/TS2.png" alt="picture of a haircut 2">
+                    <img src="./images/TS3.png" alt="picture of a haircut 3">
+                    <img src="./images/TS1.png" alt="picture of a haircut 1">
+                    <img src="./images/TS2.png" alt="picture of a haircut 2">
+                    <img src="./images/TS3.png" alt="picture of a T-Shirt">
                 </div>
-                <p>The Latimer Looks Signature Tee is cut from premium cotton for a smooth, structured fit that moves with intention. 
-                    Featuring the Latimer Looks mark on the chest and a subtle nod to craftsmanship along the hem, 
-                    it’s made for those who believe personal style is the first step in self-mastery.</p>
-
-                <p>Whether paired with denim or layered beneath a tailored jacket, this tee speaks without saying a word. Clean lines. Confident energy. 
-                Designed for the modern gentleman who knows the power of presentation.</p>
-
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="./images/TS1.png" alt="picture of a haircut 1">
-                        <img src="./images/TS2.png" alt="picture of a haircut 2">
-                        <img src="./images/TS3.png" alt="picture of a haircut 3">
-                    
-                                        <!-- DUPLICATE IMAGES  -->
-
-                        <img src="./images/TS1.png" alt="picture of a haircut 1">
-                        <img src="./images/TS2.png" alt="picture of a haircut 2">
-                        <img src="./images/TS3.png" alt="picture of a T-Shirt">
-                    </div>
-                </div>
-
+            </div>
         </div>
-
-
     </section>
     
     <hr class="divider">
 
+    <!-- REVIEWS SECTION -->
+    <section class="testimonials" >
+        <h2 style="text-align: center;">Client Reviews</h2>
+        
+        <div class="testimonial-carousel">
+            <div class="testimonial-track">
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Kayla</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Jan 2, 2026</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> Haircut & Beard shaping</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">I booked an appointment for my boyfriend for a haircut/lining and for his first time I was very impressed! He did it exactly how he likes no complaints here, very professional, great conversation—we will be booking again and bringing our son here now as well.</p>
+                </div>
 
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Dovell</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Nov 25, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> Regular Haircut</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">Great Vibe, Great Atmosphere, And Great Haircut💯</p>
+                </div>
 
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Jordan</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Nov 12, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> The Sharp Reset</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">I’ve been going to him for years now, and every visit is always a great experience. The communication and conversation make each appointment more than just a haircut. It’s very rare to find someone who holds such consistency and creates such a positive and comfortable atmosphere.</p>
+                </div>
 
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Jeff</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Oct 10, 2024</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> Hair cut and Beard Grooming</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">A 5-star service. I've been twice now and would def recommend. Great service and great people skills, use of natural products, very knowledgeable and super consistent.</p>
+                </div>
 
+                <!-- DUPLICATE REVIEWS FOR INFINITE SCROLL LOOP -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Kayla</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Jan 2, 2026</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> Haircut & Beard shaping</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">I booked an appointment for my boyfriend for a haircut/lining and for his first time I was very impressed! He did it exactly how he likes no complaints here, very professional, great conversation—we will be booking again and bringing our son here now as well.</p>
+                </div>
 
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Dovell</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Nov 25, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> Regular Haircut</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">Great Vibe, Great Atmosphere, And Great Haircut💯</p>
+                </div>
 
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Jordan</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Nov 12, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> The Sharp Reset</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">I’ve been going to him for years now, and every visit is always a great experience. The communication and conversation make each appointment more than just a haircut. It’s very rare to find someone who holds such consistency and creates such a positive and comfortable atmosphere.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Jeff</h4>
+                            <span class="verified">✔ Confirmed client</span>
+                        </div>
+                        <span class="review-date">Oct 10, 2024</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-meta">
+                        <p><strong>Service:</strong> Hair cut and Beard Grooming</p>
+                        <p><strong>Staffer:</strong> Vell</p>
+                    </div>
+                    <p class="review-text">A 5-star service. I've been twice now and would def recommend. Great service and great people skills, use of natural products, very knowledgeable and super consistent.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer id="hours">
+        <div class="footer-container">
+            <div class="business-hours">
+                <h3>Business Hours</h3>
+                <ul>
+                    <li><span>Sunday</span> <span>08:00 AM - 11:30 AM</span></li>
+                    <li><span>Monday</span> <span>Closed</span></li>
+                    <li><span>Tuesday</span> <span>Closed</span></li>
+                    <li><span>Wednesday</span> <span>04:00 PM - 07:00 PM</span></li>
+                    <li><span>Thursday</span> <span>10:30 AM - 02:00 PM<br>03:00 PM - 08:00 PM</span></li>
+                    <li><span>Friday</span> <span>09:00 AM - 02:00 PM<br>03:00 PM - 08:00 PM</span></li>
+                    <li><span>Saturday</span> <span>09:00 AM - 12:00 PM<br>01:00 PM - 05:00 PM</span></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact & Socials</h3>
+                <p><strong>Phone:</strong> [Insert Contact Number]</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/latimer_grovell/">Instagram</a>
+                    <a href="[Insert X Link]" target="_blank">X (Twitter)</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Latimer Looks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY NAV SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const stickyNav = document.getElementById("sticky-nav");
+            const heroButton = document.getElementById("main-book-btn");
+
+            window.addEventListener("scroll", () => {
+                const buttonRect = heroButton.getBoundingClientRect();
+                if (buttonRect.bottom < 0) {
+                    stickyNav.classList.add("scrolled");
+                } else {
+                    stickyNav.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
