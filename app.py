@@ -9,7 +9,7 @@ templates = Jinja2Templates(directory="./templates")
 
 @app.get("/")
 def read_index(request: Request):
-    return templates.TemplateResponse(request, "index.html", {})
+    return templates.TemplateResponse(request, "claude.html", {})
 
 
 
